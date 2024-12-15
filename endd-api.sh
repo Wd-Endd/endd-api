@@ -4,9 +4,12 @@ echo "[endd-api-installer] Does your device support binary links? (y/n)"
 read -n 1 bin_links
 if [[ $bin_links == "y" || $bin_links == "Y" ]]; then
   npm install https://github.com/Wd-Endd/endd-api.git
+  cd node_modules/endd-api
+  npm install
+  tsc
 else
   npm install https://github.com/Wd-Endd/endd-api.git --no-bin-links
+  cd node_modules/endd-api
+  npm install
+  tsc
 fi
-
-cd node_modules/endd-api
-tsc
