@@ -9,7 +9,6 @@
   "author": "Endd2604",
   "license": "MIT",
   "dependencies": {
-    "endd-api": "github:Wd-Endd/endd-api",
     "express": "^4.21.2",
     "fs-extra": "^11.2.0",
     "typescript": "^5.7.2",
