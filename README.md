@@ -9,7 +9,7 @@ and then Copy.
 Put the ``endd-api.sh`` file into your workspace (``node_modules/../``)
 Run this file, can be run by entering terminal command:
 ```sh
-wget https://raw.githubusercontent.com/Wd-Endd/endd-api/main/endd-api.sh
+wget https://raw.githubusercontent.com/Wd-Endd/endd-api/main/endd-api-installer.sh
 bash endd-api.sh
 ```
 - Apply to your code:
