@@ -10,6 +10,6 @@ if [[ $bin_links == "y" || $bin_links == "Y" ]]; then
 else
   npm install https://github.com/Wd-Endd/endd-api.git --no-bin-links
   cd node_modules/endd-api
-  npm install
+  npm install --no-bin-links 
   tsc
 fi
