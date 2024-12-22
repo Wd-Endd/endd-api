@@ -9,6 +9,7 @@
   "author": "Endd2604",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.21.2",
     "fs-extra": "^11.2.0",
     "tall": "^8.0.0",
     "ws": "^8.18.0"
@@ -17,8 +18,7 @@
     "@types/express": "^5.0.0",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.10.1",
-    "@types/ws": "^8.5.13"
-    "express": "^4.21.2",
-    "typescript": "^5.7.2",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.2"
   }
 }
