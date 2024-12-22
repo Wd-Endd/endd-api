@@ -20,7 +20,7 @@ const { copySupperSync, liveServer } = require("endd-api");
 copySupperSync(
   "source/directory_or_file",
   "destination/directory_or_file",
-  ["source/except1", "source/except2"] // Or not;-;
+  ["source/except1", "source/except2"], // Or not;-;
 );
 liveServer("target/directory", 5500 /*Port*/ );
 ```
