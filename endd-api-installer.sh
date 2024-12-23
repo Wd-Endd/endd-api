@@ -21,4 +21,6 @@ if [ -n "$dev" ]; then
   git clone https://github.com/Wd-Endd/endd-api.git
 fi
 
+mv ./endd-api/* ./
+rm ./endd-api
 echo "[endd-api-installer] Complete!"
