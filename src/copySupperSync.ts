@@ -14,7 +14,8 @@ const reset = "\x1b[0m";
 export function copySupperSync(target: string, to: string, except: string[] = []) {
 
   // get mtime
-  const mtimePath = path.resolve(to, ".mtime.json");
+  let mtimePath = path.resolve(to, ".mtime.json");
+  if (fs.statSync(target).isFile()) { mtimePath = path.resolve(to, "..", ".mtime.json") }
   let oldMtime = {};
   if (fs.existsSync(mtimePath)) {
     oldMtime = JSON.parse(fs.readFileSync(mtimePath, 'utf8'));
@@ -60,7 +61,7 @@ export function copySupperSync(target: string, to: string, except: string[] = []
 
       // Otherwise, if it is a file, execute complete 
       else if (stats.isFile()) {
-        complete(sourcePath, destinationPath, currentMtime, oldMtime, file, stats);
+        complete(sourcePath, destinationPath, oldMtime, currentMtime, file, stats);
       }
 
     });
