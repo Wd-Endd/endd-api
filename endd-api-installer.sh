@@ -22,7 +22,7 @@ sleep 3
 if [ -n "$dev" ]; then
   echo "[endd-api-installer] Setting up dev mode..."
   git clone https://github.com/Wd-Endd/endd-api.git
-  mv -n ./endd-api/* ./
+  mv ./endd-api/* ./
   rm -rf ./endd-api
 fi
 
