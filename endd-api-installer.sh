@@ -13,3 +13,12 @@ else
   # npm install --only=dev --no-bin-links
   tsc
 fi
+
+echo "[endd-api-installer] Completing..."
+read -t 3 -n 1 dev
+if [ -n "$dev" ]; then
+  echo "[endd-api-installer] Setting up dev mode..."
+  git clone https://github.com/Wd-Endd/endd-api.git
+fi
+
+echo "[endd-api-installer] Complete!"
