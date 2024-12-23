@@ -16,8 +16,10 @@ fi
 
 echo "[endd-api-installer] Complete in 3s..."
 read -t 3 -n 1 dev
+
+sleep 3
+
 if [ -n "$dev" ]; then
-  sleep 0.5
   echo "[endd-api-installer] Setting up dev mode..."
   git clone https://github.com/Wd-Endd/endd-api.git
   mv -n ./endd-api/* ./
